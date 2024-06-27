@@ -1,4 +1,4 @@
-# MultiTreadChat
+# MultiThreadChat
 멀티쓰레드 기반의 채팅 시스템
 
 ### 멀티쓰레드란?
