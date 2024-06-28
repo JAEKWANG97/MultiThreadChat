@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ChatController">
+    <children>
+        <ListView fx:id="messagesList" prefHeight="300.0" prefWidth="200.0"/>
+        <TextField fx:id="messageField" promptText="Enter your message"/>
+        <Button text="Send" onAction="#sendMessage"/>
+    </children>
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+</VBox>
