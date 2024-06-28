@@ -106,35 +106,9 @@ while (true) {
 
 ## Client와 Server의 구조
 
-```mermaid
-graph TD
-    A[Client 1] -->|메시지 전송| B[Server]
-    A1[Client 2] -->|메시지 전송| B
-    A2[Client 3] -->|메시지 전송| B
-    B -->|메시지 브로드캐스트| A
-    B -->|메시지 브로드캐스트| A1
-    B -->|메시지 브로드캐스트| A2
-    subgraph 클라이언트
-        A
-        A1
-        A2
-    end
-    subgraph 서버
-        B
-    end
-    B -->|소켓 연결 관리| C[ClientHandler 1]
-    B -->|소켓 연결 관리| C1[ClientHandler 2]
-    B -->|소켓 연결 관리| C2[ClientHandler 3]
-    subgraph 서버 내
-        B
-        C
-        C1
-        C2
-    end
-    C -->|메시지 수신 및 전송| B
-    C1 -->|메시지 수신 및 전송| B
-    C2 -->|메시지 수신 및 전송| B
-```
+![image](https://github.com/JAEKWANG97/MultiThreadChat/assets/65598179/8f0097b4-71a4-43dc-b5fa-9bae5ccaa18f)
+
+
 
 ## 실행 방법
 1. JavaFX SDK를 다운로드하고 `lib` 폴더의 경로를 환경 변수에 추가합니다.
